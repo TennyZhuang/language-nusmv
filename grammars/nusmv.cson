@@ -1,0 +1,32 @@
+'scopeName': 'source.nusmv'
+'name': 'nusmv'
+'fileTypes': [
+  'smv'
+  'nusmv'
+]
+'patterns': [
+  {
+    'match': '\\b(FALSE|TRUE)\\b'
+    'name': 'constant.language.nusmv'
+  }
+  {
+    'match': '-?(?=[1-9]|0(?!\\d))\\d+(\\.\\d+)?([eE][+-]?\\d+)?'
+    'name': 'constant.numeric.nusmv'
+  }
+  {
+    'match': '\\b(MODULE|DEFINE|MDEFINE|CONSTANTS|VAR|IVAR|FROZENVAR|INIT|TRANS|INVAR|SPEC|CTLSPEC|LTLSPEC|PSLSPEC|COMPUTE|NAME|INVARSPEC|FAIRNESS|JUSTICE|COMPASSION|ISA|ASSIGN|CONSTANRAINT|SIMPWFF|LTLWFF|PSLWFF|COMPWFF|IN|MIN|MAX|MIRROR|PRED|PREDICATES)\\b'
+    'name': 'control.keyword.nusmv'
+  }
+  {
+    'match': '\\b(&|!|xor|xnor|->|<->|=|!=|<|>|<=|>=|\\+|-|\\*|/|mod|<<|>>|:|:=|::|in|union|\\?)\\b'
+    'name': 'operator.keyword.nusmv'
+  }
+  {
+    'match': '\\b(boolean|integer|word|array|of)\\b'
+    'name': 'type.storage.nusmv'
+  }
+  {
+    'match': '\\b(signed|unsigned)\\b'
+    'name': 'modifier.storage.nusmv'
+  }
+]
