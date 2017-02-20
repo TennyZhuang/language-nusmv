@@ -1,0 +1,14 @@
+{
+  "name": "language-nusmv",
+  "version": "0.1.0",
+  "description": "NuSMV package for Atom",
+  "keywords": [
+  ],
+  "repository": "https://github.com/TennyZhuang/language-nusmv",
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {
+  }
+}
