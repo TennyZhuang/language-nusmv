@@ -14,7 +14,7 @@
     'name': 'constant.numeric.nusmv'
   }
   {
-    'match': '\\b(MODULE|DEFINE|MDEFINE|CONSTANTS|VAR|IVAR|FROZENVAR|INIT|TRANS|INVAR|SPEC|CTLSPEC|LTLSPEC|PSLSPEC|COMPUTE|NAME|INVARSPEC|FAIRNESS|JUSTICE|COMPASSION|ISA|ASSIGN|CONSTANRAINT|SIMPWFF|LTLWFF|PSLWFF|COMPWFF|IN|MIN|MAX|MIRROR|PRED|PREDICATES)\\b'
+    'match': '\\b(MODULE|DEFINE|MDEFINE|CONSTANTS|VAR|IVAR|FROZENVAR|INIT|TRANS|INVAR|SPEC|CTLSPEC|LTLSPEC|PSLSPEC|COMPUTE|NAME|INVARSPEC|FAIRNESS|JUSTICE|COMPASSION|ISA|ASSIGN|CONSTANRAINT|SIMPWFF|LTLWFF|PSLWFF|COMPWFF|IN|MIN|MAX|MIRROR|PRED|PREDICATES|case|esac)\\b'
     'name': 'control.keyword.nusmv'
   }
   {
@@ -28,5 +28,18 @@
   {
     'match': '\\b(signed|unsigned)\\b'
     'name': 'modifier.storage.nusmv'
+  },
+  {
+    'begin': '--',
+    'end': '$\\n?',
+    'name': 'comment.line.nusmv',
+  },
+  {
+    'match': '\\b(?-i:init|next)\\b'
+    'name': 'entity.name.function.nusmv'
+  },
+  {
+    'match': '\\b(?-i:EX|AX|EF|AF|EG|AG|E|F|O|G|H|X|Y|Z|A|U|S|V|T|BU|EBF|ABF|EBG|ABG|count|toint|resize|select|process)\\b'
+    'name': 'support.function.nusmv'
   }
 ]
