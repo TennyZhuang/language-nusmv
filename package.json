@@ -1,6 +1,6 @@
 {
   "name": "language-nusmv",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "NuSMV package for Atom",
   "keywords": [],
   "repository": "https://github.com/TennyZhuang/language-nusmv",
